@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TrainingCenterDatabase xmlns="http://www.garmin.com/xmlschemas/TrainingCenterDatabase/v2">
+    <Activities>
+        <Activity Sport="Running">
+            <Id>2020-02-11T19:40:22.000-05:00</Id>
+            <Lap StartTime="2020-02-11T19:40:22.000-05:00">
+                <TotalTimeSeconds>1915.0</TotalTimeSeconds>
+                <DistanceMeters>5782.82</DistanceMeters>
+                <Calories>456</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+                <Track>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:44:03.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>146</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:44:04.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>150</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                </Track>
+            </Lap>
+            <Lap StartTime="2020-02-11T19:45:22.000-05:00">
+                <TotalTimeSeconds>1915.0</TotalTimeSeconds>
+                <DistanceMeters>5782.82</DistanceMeters>
+                <Calories>456</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+                <Track>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:45:03.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>40.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-76.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>9.071420612508698</AltitudeMeters>
+                        <DistanceMeters>1.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>147</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:45:04.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>150</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                </Track>
+            </Lap>
+            <Creator xsi:type="Device_t" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Name>Fitbit Ionic</Name>
+                <UnitId>0</UnitId>
+                <ProductID>0</ProductID>
+            </Creator>
+        </Activity>
+
+        <!-- Second activity -->
+        <Activity Sport="Biking">
+            <Id>2020-02-11T19:40:22.000-05:00</Id>
+            <Lap StartTime="2020-03-11T19:40:22.000-05:00">
+                <TotalTimeSeconds>2015.0</TotalTimeSeconds>
+                <DistanceMeters>6782.82</DistanceMeters>
+                <Calories>556</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Auto</TriggerMethod>
+                <Track>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:44:03.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>146</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:44:04.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>150</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                </Track>
+            </Lap>
+            <Lap StartTime="2020-02-11T19:45:22.000-05:00">
+                <TotalTimeSeconds>1915.0</TotalTimeSeconds>
+                <DistanceMeters>5782.82</DistanceMeters>
+                <Calories>456</Calories>
+                <Intensity>Active</Intensity>
+                <TriggerMethod>Manual</TriggerMethod>
+                <Track>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:45:03.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>40.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-76.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>9.071420612508698</AltitudeMeters>
+                        <DistanceMeters>1.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>147</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                    <Trackpoint>
+                        <Time>2020-02-11T21:45:04.000-05:00</Time>
+                        <Position>
+                            <LatitudeDegrees>39.96274161338806</LatitudeDegrees>
+                            <LongitudeDegrees>-75.17718994617462</LongitudeDegrees>
+                        </Position>
+                        <AltitudeMeters>8.071420612508698</AltitudeMeters>
+                        <DistanceMeters>0.0</DistanceMeters>
+                        <HeartRateBpm>
+                            <Value>150</Value>
+                        </HeartRateBpm>
+                    </Trackpoint>
+                </Track>
+            </Lap>
+            <Creator xsi:type="Device_t" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                <Name>Fitbit Ionic</Name>
+                <UnitId>0</UnitId>
+                <ProductID>0</ProductID>
+            </Creator>
+        </Activity>
+    </Activities>
+</TrainingCenterDatabase>
