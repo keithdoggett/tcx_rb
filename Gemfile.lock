@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    tcx_rb (0.1.0)
+      nokogiri (~> 1.10)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.4.0)
+    minitest (5.14.0)
+    nokogiri (1.10.8)
+      mini_portile2 (~> 2.4.0)
+    rake (12.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest (~> 5.0)
+  rake (~> 12.0)
+  tcx_rb!
+
+BUNDLED WITH
+   2.1.4
