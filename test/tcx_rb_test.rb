@@ -6,4 +6,12 @@ class TcxRbTest < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::TcxRb::VERSION
   end
+
+  def test_workout_from_tcx
+    tcx_str = File.read('./test/data/test_data.tcx')
+    workout = TcxRb.workout_from_tcx(tcx_str)
+    assert_equal(2, workout.activities.size)
+    assert_equal(2, workout.activities[0].laps.size)
+    assert_equal(2, workout.activities[0].laps[0].trackpoints.size)
+  end
 end
