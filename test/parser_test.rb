@@ -2,15 +2,18 @@
 
 require 'test_helper'
 
-TCX_STR = File.read('./test/data/test_data.tcx')
 class ParserTest < Minitest::Test
+  def setup
+    @tcx_str = File.read('./test/data/test_data.tcx')
+  end
+
   def test_parser_loads_doc
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
     assert_equal(Nokogiri::XML::Document, parser.doc.class)
   end
 
   def test_parser_parse_trackpoints
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
     trackpoints = parser.parse_trackpoints
     assert_equal(8, trackpoints.size)
     assert_equal('2020-02-11T21:44:03.000-05:00', trackpoints[0][:time])
@@ -22,7 +25,7 @@ class ParserTest < Minitest::Test
   end
 
   def test_parser_parse_trackpoints_with_input
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
 
     # parse the second lap
     second_lap = parser.doc.css('Lap')[1]
@@ -37,7 +40,7 @@ class ParserTest < Minitest::Test
   end
 
   def test_parser_parse_laps
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
     laps = parser.parse_laps
     assert_equal(4, laps.size)
     assert_equal('2020-02-11T19:40:22.000-05:00', laps[0][:start_time])
@@ -50,7 +53,7 @@ class ParserTest < Minitest::Test
   end
 
   def test_parser_parse_laps_with_input
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
     second_activity = parser.doc.css('Activity')[1]
     laps = parser.parse_laps(second_activity)
     assert_equal(2, laps.size)
@@ -64,7 +67,7 @@ class ParserTest < Minitest::Test
   end
 
   def test_parser_parse_activities
-    parser = TcxRb::Parser.new(TCX_STR)
+    parser = TcxRb::Parser.new(@tcx_str)
     activities = parser.parse_activities
     assert_equal(2, activities.size)
     assert_equal('Running', activities[0][:sport])
