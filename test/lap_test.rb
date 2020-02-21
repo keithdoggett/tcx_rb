@@ -75,6 +75,10 @@ class LapTest < Minitest::Test
     assert_equal(1.0, @pace_lap.min_pace)
   end
 
+  def test_active_time
+    assert_equal(15, @pace_lap.active_time)
+  end
+
   def test_avg_pace
     assert_equal(26.0 / 15, @pace_lap.avg_pace)
   end

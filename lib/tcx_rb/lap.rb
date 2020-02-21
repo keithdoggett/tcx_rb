@@ -13,7 +13,8 @@ module TcxRb
       @trigger_method = args[:trigger_method]
       @trackpoints = args[:trackpoints]
     end
-    attr_accessor :start_time, :total_time, :distance, :calories, :intensity, :trigger_method, :trackpoints
+    attr_accessor :start_time, :total_time, :distance, :calories, :intensity,
+                  :trigger_method, :trackpoints
 
     def max_heart_rate
       @trackpoints.map(&:heart_rate).max
@@ -80,20 +81,20 @@ module TcxRb
       min
     end
 
-    def avg_pace
-      # total distance of the workout is stored in @distance
-      # in lap. We need to aggregate "active_time" from the trackpoints
-      # to figure out how much time was actually spent moving, then take
-      # the average that way. In this case, we will account for trackpoints
-      # where the prev_tp is 0 and this one is active
-      active_time = 0.0
+    def active_time
+      # aggregation of time spent moving
+      active = 0.0
       @trackpoints.each_with_index do |tp, i|
         next if i.zero? || tp.distance.zero?
 
         prev_tp = @trackpoints[i - 1]
         d_t = Time.parse(tp.time) - Time.parse(prev_tp.time)
-        active_time += d_t
+        active += d_t
       end
+      active
+    end
+
+    def avg_pace
       distance / active_time
     end
   end
