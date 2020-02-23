@@ -50,8 +50,6 @@ module TcxRb
       total_distance / total_time
     end
 
-    private
-
     def total_tps
       @laps.sum { |lap| lap.trackpoints.size }
     end
