@@ -15,8 +15,8 @@ class ActivityTest < Minitest::Test
       { time: ref_time + 20, altitude: 30, distance: 15, heart_rate: 200 }
     ].map { |tp_data| TcxRb::Trackpoint.new(tp_data) }
 
-    @lap1 = TcxRb::Lap.new(trackpoints: @test_tps1, distance: 15)
-    @lap2 = TcxRb::Lap.new(trackpoints: @test_tps2, distance: 15)
+    @lap1 = TcxRb::Lap.new(trackpoints: @test_tps1, distance: 15, calories: 100)
+    @lap2 = TcxRb::Lap.new(trackpoints: @test_tps2, distance: 15, calories: 100)
 
     @activity = TcxRb::Activity.new(laps: [@lap1, @lap2])
   end
@@ -67,5 +67,9 @@ class ActivityTest < Minitest::Test
 
   def test_avg_pace
     assert_equal(2.0, @activity.avg_pace)
+  end
+
+  def test_calories
+    assert_equal(200, @activity.calories)
   end
 end

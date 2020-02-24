@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Kdoggett887/tcx_rb.svg?branch=master)](https://travis-ci.org/Kdoggett887/tcx_rb)
+
 # TcxRb
 
 TcxRb is a ruby library for parsing Garmin TCX files into sensible Ruby objects.
@@ -125,9 +127,10 @@ Instances of `Workout`, `Activity`, and `Lap` all implement the following method
 
 Additionally, `Workout` and `Activity` implement the following:
 
-- `total_tps` - The sum of the trackpoints contained in the child laps.
-- `total_time` - The total "active" time of all the child laps (discounts time spent paused).
-- `total_distance` - Total distance of all the child laps.
+- `total_tps` - The sum of the size of trackpoints contained in the child laps.
+- `time` - The total "active" time of all the child laps (discounts time spent paused).
+- `distance` - Total distance of all the child laps.
+- `calories` - Sum of the calories burned in each child lap.
 
 ### Examples
 

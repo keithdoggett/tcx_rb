@@ -50,19 +50,23 @@ module TcxRb
     end
 
     def avg_pace
-      total_distance / total_time
+      distance / time
     end
 
     def total_tps
       @activities.sum(&:total_tps)
     end
 
-    def total_time
-      @activities.sum(&:total_time)
+    def time
+      @activities.sum(&:time)
     end
 
-    def total_distance
-      @activities.sum(&:total_distance)
+    def distance
+      @activities.sum(&:distance)
+    end
+
+    def calories
+      @activities.sum(&:calories)
     end
   end
 end

@@ -47,19 +47,23 @@ module TcxRb
     end
 
     def avg_pace
-      total_distance / total_time
+      distance / time
     end
 
     def total_tps
       @laps.sum { |lap| lap.trackpoints.size }
     end
 
-    def total_time
+    def time
       @laps.sum(&:active_time)
     end
 
-    def total_distance
+    def distance
       @laps.sum(&:distance)
+    end
+
+    def calories
+      @laps.sum(&:calories)
     end
   end
 end
