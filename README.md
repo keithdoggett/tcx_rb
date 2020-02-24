@@ -113,21 +113,21 @@ parser.parse_trackpoints
 
 Instances of `Workout`, `Activity`, and `Lap` all implement the following methods:
 
-`max_heart_rate` - Max heart rate of all trackpoints.
-`min_heart_rate` - Min heart rate of all trackpoints.
-`avg_heart_rate` - Avg heart rate of all trackpoints.
-`max_altitude` - Max altitude of all trackpoints.
-`min_altitude` - Min altitude of all trackpoints.
-`avg_altitude` - Avg altitude of all trackpoints.
-`max_pace` - Max pace of all pairs of trackpoints (m/s).
-`min_pace` - Min pace of all pairs of trackpoints (m/s).
-`avg_pace` - Avg pace of all pairs of trackpoitns (m/s).
+- `max_heart_rate` - Max heart rate of all trackpoints.
+- `min_heart_rate` - Min heart rate of all trackpoints.
+- `avg_heart_rate` - Avg heart rate of all trackpoints.
+- `max_altitude` - Max altitude of all trackpoints.
+- `min_altitude` - Min altitude of all trackpoints.
+- `avg_altitude` - Avg altitude of all trackpoints.
+- `max_pace` - Max pace of all pairs of trackpoints (m/s).
+- `min_pace` - Min pace of all pairs of trackpoints (m/s).
+- `avg_pace` - Avg pace of all pairs of trackpoitns (m/s).
 
 Additionally, `Workout` and `Activity` implement the following:
 
-`total_tps` - The sum of the trackpoints contained in the child laps.
-`total_time` - The total "active" time of all the child laps (discounts time spent paused).
-`total_distance` - Total distance of all the child laps.
+- `total_tps` - The sum of the trackpoints contained in the child laps.
+- `total_time` - The total "active" time of all the child laps (discounts time spent paused).
+- `total_distance` - Total distance of all the child laps.
 
 ### Examples
 
