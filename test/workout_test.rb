@@ -64,4 +64,20 @@ class WorkoutTest < Minitest::Test
   def test_avg_pace
     assert_equal(2.0, @workout.avg_pace)
   end
+
+  def test_add_overload
+    workout1 = @workout
+    workout2 = @workout
+    new_workout = workout1 + workout2
+
+    assert_equal(4, new_workout.activities.size)
+  end
+
+  def test_minus_overload
+    workout1 = @workout
+    workout2 = @workout
+
+    new_workout = workout1 - workout2
+    assert_equal(0, new_workout.activities.size)
+  end
 end

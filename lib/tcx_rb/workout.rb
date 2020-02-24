@@ -7,6 +7,14 @@ module TcxRb
     end
     attr_accessor :activities
 
+    def +(other)
+      Workout.new(@activities + other.activities)
+    end
+
+    def -(other)
+      Workout.new(@activities - other.activities)
+    end
+
     def max_heart_rate
       @activities.map(&:max_heart_rate).max
     end

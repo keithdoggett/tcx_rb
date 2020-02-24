@@ -11,15 +11,20 @@ module TcxRb
   class Error < StandardError; end
   # Your code goes here...
 
-  def self.workout_from_tcx(tcx_str)
+  def self.workout_from_str(tcx_str)
     parser = TcxRb::Parser.new(tcx_str)
-    workout_tree = parser.parse_activities
+    workout = parser.parse_activities
 
-    activities = workout_tree.map do |activity|
+    activities = workout.map do |activity|
       activity[:laps] = generate_laps(activity[:laps])
       TcxRb::Activity.new(activity)
     end
     TcxRb::Workout.new(activities)
+  end
+
+  def self.workout_from_file(path)
+    str = File.read(path)
+    workout_from_str(str)
   end
 
   class << self

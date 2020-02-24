@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Keith Doggett']
   spec.email         = ['keith.doggett887@gmail.com']
 
-  spec.summary       = 'TcxRB is a Garminc TCX parsing library for Ruby.'
+  spec.summary       = 'TcxRB is a Garmin TCX parsing library for Ruby.'
   spec.description   =
     'TcxRB is a Garmin TCX parsing library for Ruby. '\
     'It gives access to raw data and has helpful aggregate '\
