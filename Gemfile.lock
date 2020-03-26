@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tcx_rb (0.2.1)
+    tcx_rb (0.2.2)
       nokogiri (~> 1.10)
 
 GEM
