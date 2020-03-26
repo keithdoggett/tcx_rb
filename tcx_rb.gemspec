@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     'TcxRB is a Garmin TCX parsing library for Ruby. '\
     'It gives access to raw data and has helpful aggregate '\
     'functions for groups of data.'
-  spec.homepage      = 'https://github.com/Kdoggett887/tcx_rb'
+  spec.homepage      = 'https://github.com/keithdoggett/tcx_rb'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
