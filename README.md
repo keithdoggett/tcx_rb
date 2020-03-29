@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Kdoggett887/tcx_rb.svg?branch=master)](https://travis-ci.org/Kdoggett887/tcx_rb)
+[![Build Status](https://travis-ci.org/keithdoggett/tcx_rb.svg?branch=master)](https://travis-ci.org/keithdoggett/tcx_rb)
 
 # TcxRb
 
