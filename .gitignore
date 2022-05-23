@@ -7,3 +7,4 @@
 /spec/reports/
 /test/data/full_data.tcx
 /tmp/
+Gemfile.lock
